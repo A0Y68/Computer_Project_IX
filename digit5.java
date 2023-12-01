@@ -7,8 +7,9 @@ public class digit5 {
         System.out.print("\nEnter a Five-Digit Number: ");
         int n = sc.nextInt();
         if(n >= 10000 && n <= 99999 ){
-            int c = 0, extreme = 0, middle = 0, d;
+            int c = 1, extreme = 0, middle = 0, d;
             while(n>0){
+                c++;
                 d = n%10;
                 if(c==1 || c==5)
                      extreme+=d;
