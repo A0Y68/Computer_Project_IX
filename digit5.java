@@ -9,13 +9,13 @@ public class digit5 {
         if(n >= 10000 && n <= 99999 ){
             int c = 1, extreme = 0, middle = 0, d;
             while(n>0){
-                c++;
                 d = n%10;
                 if(c==1 || c==5)
                      extreme+=d;
                 else 
                     middle+=d;
                 n/=10;
+                c++;
             }
             if(extreme==middle)
                 System.out.print("\nSum Extreme and Middle are equal.");
