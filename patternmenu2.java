@@ -25,11 +25,13 @@ public class patternmenu2 {
                     System.out.println();
 
                     for(int i=1 ; i<=h/2 ; i++){
+                        for(int sp = 1;sp <= h/2-i;sp++) System.out.print(" ");
                         for(int j = 1; j<=2*i-1;j++) System.out.print("*");
                         System.out.println();
                     }
                     for(int i=h/2+1 ; i>=1 ; i--){
-                        for(int j = 1; j<=2*i-1;j++) System.out.print("*");
+                        for(int sp = 1;sp <= (h/2+1)-i;sp++) System.out.print(" ");
+                        for(int j = 1; j < =2*i-1;j++) System.out.print("*");
                         System.out.println();
                     }
                     break;
