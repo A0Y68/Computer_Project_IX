@@ -43,34 +43,29 @@ public class patternmenu {
                         System.out.println();
 
                         for(int i = h;i>=1;i--){
-                            for(int j=1;j<=i;j++){
-                                if(i!=1 && i!=h){
-                                    if(j!=i)
-                                        System.out.print(j);
-                                    else
-                                        System.out.print("#");
-                                }
-                                else
+                            for(int j=1;j<=i;j++)
                                     System.out.print(j);
-                            }
 
                             for(int sp=1;sp<=2*(h-i)-1;sp++)
-                                System.out.print(" ");
+                                if(sp == 1 || sp == 2*(h-i)-1)
+                                    System.out.print("#");
+                                else
+                                    System.out.print(" ");
 
                             for(int j=i;j>=1;j--)
-                                if(j!=h){
-                                    if(i!=1 && i!=h){
-                                        if(j!=i)
-                                            System.out.print(j);
-                                        else
-                                            System.out.print("#");
-                                    }
-                                else
-                                    System.out.print(j);
-                                }
-                                    
+                                if(j!=h)
+                                    System.out.print(j);;
+                                                              
+    
                             System.out.println();
                         }
+                        for(int i=1; i<=2*h-1;i++){
+                            if(i==1||i==2*h-1)
+                                System.out.print(1);
+                            else
+                                System.out.print(" ");
+                        }
+                        System.err.println();
                         break;
 
                         case 0: System.out.println("\nHasta La Vista"); System.exit(0);
