@@ -8,7 +8,6 @@ public class pattern {
         int h = sc.nextInt();
         System.out.println();
         for(int i = 1;i<=h;i++){
-            if(i!=h/2+1){
                 for(int sp = 1; sp <= h-i; sp++)
                     System.out.print(" ");
                 
@@ -19,7 +18,6 @@ public class pattern {
                     System.out.print(j);
                 
                 System.out.println();
-            }
         }
         sc.close();
     }
